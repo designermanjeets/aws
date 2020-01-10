@@ -25,7 +25,10 @@
               "apps/awsmscreativepixel/src/favicon.ico",
               "apps/awsmscreativepixel/src/assets"
             ],
-            "styles": ["apps/awsmscreativepixel/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "apps/awsmscreativepixel/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -84,7 +87,10 @@
               "apps/awsmscreativepixel/tsconfig.app.json",
               "apps/awsmscreativepixel/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/awsmscreativepixel/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/awsmscreativepixel/**"
+            ]
           }
         },
         "test": {
@@ -94,7 +100,9 @@
             "tsConfig": "apps/awsmscreativepixel/tsconfig.spec.json",
             "karmaConfig": "apps/awsmscreativepixel/karma.conf.js",
             "polyfills": "apps/awsmscreativepixel/src/polyfills.ts",
-            "styles": [],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+            ],
             "scripts": [],
             "assets": []
           }
@@ -122,8 +130,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/awsmscreativepixel-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/awsmscreativepixel-e2e/**"]
+            "tsConfig": [
+              "apps/awsmscreativepixel-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/awsmscreativepixel-e2e/**"
+            ]
           }
         }
       }
