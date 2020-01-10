@@ -10,5 +10,12 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "awsmscreativepixel-e2e": {
+      "tags": []
+    },
+    "awsmscreativepixel": {
+      "tags": []
+    }
+  }
 }
