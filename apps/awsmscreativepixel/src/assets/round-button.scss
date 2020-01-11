@@ -1,0 +1,111 @@
+.round-button {
+    position: relative;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    text-align: center;
+    padding: .5rem 2.2rem .75rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    font-weight: 300;
+    border: 0.2rem solid #fff;
+    box-shadow: 0 0 1px 0 #fff inset, 0 0 1px 0 #fff;
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    min-width: 250px;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+.round-button:disabled {
+    background: #c2c2c2;
+    text-decoration: line-through;
+}
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .round-button {
+        max-width: 500px;
+   }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 0.5633802817) {
+    .round-button {
+        font-size: 1.8rem;
+   }
+}
+@media only screen and (min-device-width: 320px) and (orientation: landscape) {
+    .round-button {
+        max-width: 350px;
+   }
+}
+@media only screen and (min-width: 992px) {
+    .round-button {
+        width: auto;
+   }
+}
+@media only screen and (min-width: 768px) {
+    .round-button {
+        max-width: 400px;
+   }
+}
+.round-button svg {
+    width: 40px;
+    z-index: 1;
+    margin-left: 0.2rem;
+}
+.round-button span {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.round-button:before {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    position: absolute;
+    content: "";
+    width: 0;
+    border-radius: 30px;
+    transform-origin: right;
+    -webkit-transform-origin: right;
+    height: 100%;
+    border-color: #017DA0 ;
+    box-shadow: 0 0 1px 0 #017da0 inset, 0 0 1px 0 #017da0;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    background: #017da0;
+    z-index: 0;
+}
+.round-button:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #f6f6f6;
+}
+.round-button:focus:before {
+    width: 0;
+}
+.round-button:hover:before {
+    color: #f6f6f6;
+    opacity: 1;
+    width: 100%;
+}
+.round-button:hover {
+    color: #f6f6f6;
+}
+.round-button:hover .btn-icon-svg {
+    fill: #fff;
+}

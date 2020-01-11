@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@awsworkspace/awslogin": ["libs/awslogin/src/index.ts"],
+      "@awsworkspace/awsheader": ["libs/awsheader/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

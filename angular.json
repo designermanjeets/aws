@@ -27,7 +27,8 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
-              "apps/awsmscreativepixel/src/styles.scss"
+              "apps/awsmscreativepixel/src/styles.scss",
+              "apps/awsmscreativepixel/src/awsms-custom-theme.scss"
             ],
             "scripts": []
           },
@@ -87,10 +88,7 @@
               "apps/awsmscreativepixel/tsconfig.app.json",
               "apps/awsmscreativepixel/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/awsmscreativepixel/**"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/awsmscreativepixel/**"]
           }
         },
         "test": {
@@ -101,7 +99,8 @@
             "karmaConfig": "apps/awsmscreativepixel/karma.conf.js",
             "polyfills": "apps/awsmscreativepixel/src/polyfills.ts",
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css"
+              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "apps/awsmscreativepixel/src/awsms-custom-theme.scss"
             ],
             "scripts": [],
             "assets": []
@@ -130,14 +129,71 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/awsmscreativepixel-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/awsmscreativepixel-e2e/**"
-            ]
+            "tsConfig": ["apps/awsmscreativepixel-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/awsmscreativepixel-e2e/**"]
           }
+        }
+      }
+    },
+    "awslogin": {
+      "projectType": "library",
+      "root": "libs/awslogin",
+      "sourceRoot": "libs/awslogin/src",
+      "prefix": "awsworkspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/awslogin/tsconfig.lib.json",
+              "libs/awslogin/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/awslogin/**"]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/awslogin/src/test.ts",
+            "tsConfig": "libs/awslogin/tsconfig.spec.json",
+            "karmaConfig": "libs/awslogin/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "awsheader": {
+      "projectType": "library",
+      "root": "libs/awsheader",
+      "sourceRoot": "libs/awsheader/src",
+      "prefix": "awsworkspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/awsheader/tsconfig.lib.json",
+              "libs/awsheader/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/awsheader/**"]
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/awsheader/src/test.ts",
+            "tsConfig": "libs/awsheader/tsconfig.spec.json",
+            "karmaConfig": "libs/awsheader/karma.conf.js"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
         }
       }
     }

@@ -1,4 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&display=swap');
+@import url('./assets/round-button.scss');
+@import url('./assets/animation.scss');
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Encode Sans Expanded', sans-serif; background-image: url('./assets/dots.bg.png'); background-size: contain; background-color: #171941; }
+.container { margin: 0 100px; }
+.no-padd { padding: 0 !important; }
+.spacer {
+    flex: 1 1 auto;
+  }
+
+.huge-h1 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+.blue-text { color: rgb(0, 160, 198) }
+
+.huge-h1 {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    font-size: 3rem;
+    width: 100%;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    animation-delay: 0.5s;
+    -webkit-animation: fadeInHugeText 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInHugeText 1s; /* Firefox < 16 */
+    -ms-animation: fadeInHugeText 1s; /* Internet Explorer */
+    -o-animation: fadeInHugeText 1s; /* Opera < 12.1 */
+    animation: fadeInHugeText 1s;
+}
+  
+.blue-text {
+    color: rgb(0, 160, 198);
+    -webkit-animation: fadeInHugeText 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInHugeText 1s; /* Firefox < 16 */
+    -ms-animation: fadeInHugeText 1s; /* Internet Explorer */
+    -o-animation: fadeInHugeText 1s; /* Opera < 12.1 */
+    animation: fadeInHugeText 1s;
+    background: linear-gradient(
+        90deg, #017DA0 23%,
+        rgba(27, 161, 191, 1) 53%,
+        #017DA0 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.bounc-anim {
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    position: relative;
+    top: 0;
+}
+  

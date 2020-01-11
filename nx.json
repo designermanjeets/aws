@@ -16,6 +16,12 @@
     },
     "awsmscreativepixel": {
       "tags": []
+    },
+    "awslogin": {
+      "tags": []
+    },
+    "awsheader": {
+      "tags": []
     }
   }
 }

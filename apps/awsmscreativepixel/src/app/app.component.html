@@ -1,109 +1,73 @@
-<header class="flex">
-  <img
-    alt="Nx logo"
-    width="75"
-    src="https://nx.dev/assets/images/nx-logo-white.svg"
-  />
-  <h1>Welcome to {{ title }}!</h1>
-</header>
-<main>
-  <h2>Resources &amp; Tools</h2>
-  <p>
-    Thank you for using and showing some ♥ for Nx.
-  </p>
-  <div class="flex github-star-container">
-    <a
-      href="https://github.com/nrwl/nx"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      If you like Nx, please give it a star:
-      <div class="github-star-badge">
-        <svg
-          class="material-icons"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
-          />
+<section class="container">
+
+  <!-- Header lib -->
+  <awsworkspace-header></awsworkspace-header>
+
+  <section fxLayout="row wrap" fxLayoutAlign="space-around center"  class="weloveto">
+    <div fxFlex>
+      <h1 class="huge-h1 ">We love to <span class="blue-text">imagine</span>,<span class="blue-text"> design </span>&amp;
+        <span class="blue-text"> code </span>things.<br> Building strong high tech apps is our main purpose.</h1>
+    </div>
+    <div fxFlex>
+      <div class="svg-container" id="svg-home">
+        <svg id="home-svg" class="bounc-anim" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 727.374 493.514"
+          preserveAspectRatio="xMidYMid meet" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+          <g data-name="Group 419">
+            <g fill-rule="evenodd">
+              <path fill="#66d6f0" d="M344.673 157.363c93.573-54.018 185.631-69.726 205.643-35.062 20.011 34.644-39.634 106.532-133.187 160.55-93.569 54.012-185.618 69.712-205.639 35.052-20.011-34.64 39.634-106.522 133.183-160.54z"
+                data-name="Path 2008"></path>
+              <path fill="#05748e" d="M346.211 175.124c60.343-34.843 119.72-44.963 132.629-22.611s-25.55 68.72-85.893 103.544c-60.363 34.853-119.74 44.983-132.639 22.631s25.549-68.711 85.903-103.564z"
+                data-name="Path 2009"></path>
+              <path fill="#00a0c6" d="M350.698 182.883c48.768-28.159 96.78-36.337 107.209-18.278s-20.669 55.542-69.437 83.711c-48.793 28.159-96.772 36.339-107.213 18.278-10.439-18.079 20.648-55.539 69.441-83.711z"
+                data-name="Path 2010"></path>
+              <path fill="#017DA0" d="M200.164 313.407c-16.087-27.851 19.274-79.747 82.347-127.1-35.959 26.815-71.927 53.62-93.4 80.584-21.456 26.945-28.428 54.078-14.593 73.741 13.855 19.653 48.52 31.855 103.723 25.948 136.753-14.633 319.1-125.627 399.312-293.548 24.922-52.175-23.767-80.6-73.661-71.28-21.8 4.074-43.938 11.913-66.091 19.762 24.833-7.052 49.635-15.4 71.569-15.36 225.303.453-329.051 446.101-409.206 307.253z"
+                data-name="Path 2011"></path>
+              <path fill="#017DA0" d="M520.437 103.256c2.092 1.106 4.014 2.1 5.817 3.048 8.228 2.062 14.892 5.459 19.653 10.24a27.745 27.745 0 0 1 4.413 5.758c16.166 27.99-19.673 80.3-83.372 127.848 39.5-26.745 77.456-56.867 109.261-86.59 8.2-8.058 16.385-16.1 20.3-30 3.9-13.876 3.536-33.618-12.132-50.073C473.66-32.701 110.944 157.603 0 360.556c77.914-131.733 368.573-336.589 520.437-257.3z"
+                data-name="Path 2012"></path>
+              <path fill="#14b3d9" d="M286.435 170.203c-47.752 27.4-88.423 60.911-113.415 89.289s-34.285 51.627-34.684 71.559c-.389 19.952 8.148 36.626 32.542 47.274s64.7 15.3 114.481 9.881 109.052-20.918 174.136-48.619 135.976-67.6 181.587-108.524 65.951-82.835 86.291-124.77c-34.275 62.853-68.571 125.7-125.507 176.985-56.946 51.269-136.554 90.973-212.4 115.477s-147.88 33.807-198.142 29.444-78.741-22.372-92.7-45.033c-13.935-22.661-13.368-49.984 4.552-81.739s53.181-67.983 91.919-96.939 80.962-50.661 122.987-66.818c42.035-16.186 83.871-26.835 125.707-37.493-54.797 21.307-109.611 42.614-157.354 70.026z"
+                data-name="Path 2013"></path>
+              <path fill="#017DA0" d="M143.965 225.695c-38.748 35.023-77.486 70.045-94.14 108.614S38.589 414.972 66.48 444.337s78.243 46 136.952 46.876c58.68.886 125.706-13.975 181.866-36.616s101.512-53.072 146.834-83.492c-36.038 21.934-72.067 43.868-125.527 59.785s-124.342 25.828-178.2 26.715-90.644-7.252-116.124-21.785c-25.46-14.543-39.595-35.471-43.579-60.542-3.964-25.092 2.221-54.3 16.455-79.926s36.525-47.634 58.808-69.657z"
+                data-name="Path 2014"></path>
+              <path class="dots-svg4" fill="#fff" d="M303.757 387.24a5.812 5.812 0 1 0-5.807-5.817 5.837 5.837 0 0 0 5.807 5.817z"
+                data-name="Path 2015" style="opacity: 0.313333;"></path>
+              <path class="dots-svg4" fill="#fff" d="M81.789 401.754a6.385 6.385 0 1 0-6.4-6.385 6.389 6.389 0 0 0 6.4 6.385z"
+                data-name="Path 2016" style="opacity: 0.313333;"></path>
+              <path class="dots-svg6" fill="#fff" d="M167.074 493.509a4.428 4.428 0 1 0-4.413-4.423 4.434 4.434 0 0 0 4.413 4.423z"
+                data-name="Path 2017" style="opacity: 0.98;"></path>
+              <path class="dots-svg5" fill="#fff" d="M618.481 249.74a4.423 4.423 0 1 0-4.432-4.423 4.425 4.425 0 0 0 4.432 4.423z"
+                data-name="Path 2018" style="opacity: 0.646667;"></path>
+              <path class="dots-svg4" fill="#fff" d="M375.636 143.099a4.418 4.418 0 1 0-4.433-4.413 4.421 4.421 0 0 0 4.433 4.413z"
+                data-name="Path 2019" style="opacity: 0.313333;"></path>
+              <path class="dots-svg3" fill="#fff" d="M271.853 343.572a4.418 4.418 0 1 0-4.433-4.413 4.415 4.415 0 0 0 4.433 4.413z"
+                data-name="Path 2020" style="opacity: 0.02;"></path>
+              <path class="dots-svg2" fill="#fff" d="M314.695 176.03a4.428 4.428 0 1 0-4.433-4.423 4.434 4.434 0 0 0 4.433 4.423z"
+                data-name="Path 2021" style="opacity: 0.353333;"></path>
+              <path class="dots-svg1" fill="#fff" d="M19.493 330.483a4.427 4.427 0 1 0-4.432-4.432 4.432 4.432 0 0 0 4.432 4.432z"
+                data-name="Path 2022" style="opacity: 0.686667;"></path>
+              <path class="dots-svg7" fill="#fff" d="M269.821 218.563a4.423 4.423 0 1 0-4.433-4.433 4.432 4.432 0 0 0 4.433 4.433z"
+                data-name="Path 2023" style="opacity: 0.686667;"></path>
+              <path class="dots-svg6" fill="#fff" d="M213.93 294.096a4.423 4.423 0 1 0-4.413-4.423 4.44 4.44 0 0 0 4.413 4.423z"
+                data-name="Path 2024" style="opacity: 0.98;"></path>
+              <path class="dots-svg5" fill="#fff" d="M593.858 102.976a5.812 5.812 0 1 0-5.817-5.807 5.826 5.826 0 0 0 5.817 5.807z"
+                data-name="Path 2025" style="opacity: 0.646667;"></path>
+              <path class="dots-svg4" fill="#fff" d="M528.266 181.299a4.423 4.423 0 1 0-4.413-4.423 4.432 4.432 0 0 0 4.413 4.423z"
+                data-name="Path 2026" style="opacity: 0.313333;"></path>
+              <path class="dots-svg3" fill="#fff" d="M500.048 108.365a4.428 4.428 0 1 0-4.423-4.423 4.425 4.425 0 0 0 4.423 4.423z"
+                data-name="Path 2027" style="opacity: 0.02;"></path>
+              <path class="dots-svg2" fill="#fff" d="M570.471 10.38a4.423 4.423 0 1 0-4.413-4.423 4.447 4.447 0 0 0 4.413 4.423z"
+                data-name="Path 2028" style="opacity: 0.353333;"></path>
+              <path class="dots-svg1" fill="#fff" d="M432.224 272.521a4.423 4.423 0 1 0-4.413-4.423 4.447 4.447 0 0 0 4.413 4.423z"
+                data-name="Path 2029" style="opacity: 0.686667;"></path>
+            </g>
+          </g>
         </svg>
-        Star
       </div>
-    </a>
-  </div>
-  <p>
-    Here are some links to help you get started.
-  </p>
-  <ul class="resources">
-    <li class="col-span-2">
-      <a
-        class="resource flex"
-        href="https://connect.nrwl.io/app/courses/nx-workspaces/intro"
-      >
-        Nx video course
-      </a>
-    </li>
-    <li class="col-span-2">
-      <a
-        class="resource flex"
-        href="https://nx.dev/angular/getting-started/what-is-nx"
-      >
-        Nx video tutorial
-      </a>
-    </li>
-    <li class="col-span-2">
-      <a
-        class="resource flex"
-        href="https://nx.dev/angular/tutorial/01-create-application"
-      >
-        Interactive tutorial
-      </a>
-    </li>
-    <li class="col-span-2">
-      <a class="resource flex" href="https://connect.nrwl.io/">
-        <img
-          height="36"
-          alt="Nrwl Connect"
-          src="https://connect.nrwl.io/assets/img/CONNECT_ColorIcon.png"
-        />
-        <span class="gutter-left">Nrwl Connect</span>
-      </a>
-    </li>
-  </ul>
-  <h2>Next Steps</h2>
-  <p>Here are some things you can do with Nx.</p>
-  <details open>
-    <summary>Add UI library</summary>
-    <pre>
-# Generate UI lib
-ng g @nrwl/angular:lib ui
+    </div>
+    <div fxFlex="100">
+        <button class="round-button"><span>Let's collaborate</span></button>
+    </div>
+  </section>
+  <!-- <awsworkspace-login [loginInput]="loginOutput" (sendLoginCreds)="getLoginCreds($event)"></awsworkspace-login> -->
+  <router-outlet></router-outlet>
 
-# Add a component
-ng g @nrwl/angular:component xyz --project ui</pre
-    >
-  </details>
-  <details>
-    <summary>View dependency graph</summary>
-    <pre>nx dep-graph</pre>
-  </details>
-  <details>
-    <summary>Run affected commands</summary>
-    <pre>
-# see what's been affected by changes
-ng affected:dep-graph
-
-# run tests for current changes
-ng affected:test
-
-# run e2e tests for current changes
-ng affected:e2e
-</pre
-    >
-  </details>
-</main>
-
-<router-outlet></router-outlet>
+</section>

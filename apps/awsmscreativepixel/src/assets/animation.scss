@@ -1,0 +1,63 @@
+
+ 
+  @keyframes bounce {
+    from {
+      top: 50px;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    25% {
+      top: 25px;
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    50% {
+      top: 50px;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    75% {
+      top: 75px;
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    to {
+      top: 50px;
+    }
+  }
+
+  @keyframes fadeInHugeText {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadeInHugeText {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Internet Explorer */
+  @-ms-keyframes fadeInHugeText {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
