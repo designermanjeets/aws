@@ -1,7 +1,7 @@
 <section class="container">
 
   <!-- Header lib -->
-  <awsworkspace-header></awsworkspace-header>
+  <awsworkspace-header [menuItems]=menuItems (clickedItem)="getClickedItem($event)"></awsworkspace-header>
 
   <section fxLayout="row wrap" fxLayoutAlign="space-around center"  class="weloveto">
     <div fxFlex>

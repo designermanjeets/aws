@@ -7,16 +7,8 @@ html, body { height: 100%; }
 body { margin: 0; font-family: 'Encode Sans Expanded', sans-serif; background-image: url('./assets/dots.bg.png'); background-size: contain; background-color: #171941; }
 .container { margin: 0 100px; }
 .no-padd { padding: 0 !important; }
-.spacer {
-    flex: 1 1 auto;
-  }
-
-.huge-h1 {
-    font-size: 3.2rem;
-    color: #fff;
-}
+.spacer { flex: 1 1 auto; } 
 .blue-text { color: rgb(0, 160, 198) }
-
 .huge-h1 {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -26,6 +18,8 @@ body { margin: 0; font-family: 'Encode Sans Expanded', sans-serif; background-im
     user-select: none;
     font-size: 3rem;
     width: 100%;
+    color: #fff;
+    line-height: 1.45;
     font-family: 'Encode Sans Expanded', sans-serif;
     animation-delay: 0.5s;
     -webkit-animation: fadeInHugeText 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -34,7 +28,6 @@ body { margin: 0; font-family: 'Encode Sans Expanded', sans-serif; background-im
     -o-animation: fadeInHugeText 1s; /* Opera < 12.1 */
     animation: fadeInHugeText 1s;
 }
-  
 .blue-text {
     color: rgb(0, 160, 198);
     -webkit-animation: fadeInHugeText 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -50,8 +43,6 @@ body { margin: 0; font-family: 'Encode Sans Expanded', sans-serif; background-im
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
 .bounc-anim {
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;

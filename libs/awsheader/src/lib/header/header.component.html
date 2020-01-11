@@ -23,11 +23,7 @@
                 </div>
             </span>
             <span class="spacer"></span>
-            <button class="nav-link active" mat-button>Home</button>
-            <button class="nav-link" mat-button>What we do</button>
-            <button class="nav-link" mat-button>Who are we</button>
-            <button class="nav-link" mat-button>Get in touch</button>
-            <button class="nav-link" mat-button>Login/Signup</button>
+            <a class="nav-link" mat-button *ngFor="let item of menuItems" (click)="onItemClick(item)">{{item.name}}</a>
         </mat-toolbar-row>
     </mat-toolbar>
 </header>
